@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstUsernameText"
+        android:layout_width="292dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:hint="your username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondUsernameText"
+        android:layout_width="317dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:hint="friends username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add" />
+
+    <EditText
+        android:id="@+id/sendText"
+        android:layout_width="332dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:hint="message text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="346dp"
+        android:layout_height="305dp"
+        android:layout_marginBottom="108dp"
+        android:text="Recieved message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendMessage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Start_Server"
+        android:text="Connect to device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondUsernameText" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:onClick="AddDevice"
+        android:text="Add username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstUsernameText" />
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:onClick="SendMessage"
+        android:text="Send message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
